@@ -2,10 +2,10 @@ let buttonEnter = document.getElementById('enter');
 let userInput = document.getElementById('userInput');
 let ul = document.querySelector('ul'); 
 
-/*function inputLength() {
+function inputLength() {
     return userInput.value.length > 0
 }
-*/
+
 function createTodo() {
     let li = document.createElement('li');
     li.appendChild(document.createTextNode(userInput.value));
