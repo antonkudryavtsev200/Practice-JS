@@ -26,7 +26,7 @@ $(function(){
           ind : todoMap.length + 1,
           text : userInput.val()
         });
-       localstorage.setItem('Todo_list',todoMap);
+       localStorage.setItem('todolist', JSON.stringify(todoMap)); //сохранение данных в локальное хранилище браузера
         userInput.val('')  ;
     
         let deleteButton = $('<button>'); // удалим заметку
